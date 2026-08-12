@@ -1,4 +1,5 @@
 import random 
+import math 
 
 symbols = ["+", "-", "*", "/"]
 
@@ -206,6 +207,7 @@ def Devition():
     try:
         global num1, num2, level, attempt, count, correct_counter, wrong_counter, a, b 
 
+        print("\nExample Answering: if result is 1.2345 , answer it with 1.23")
         symbol = "/"
 
         if num1 < num2:
@@ -220,11 +222,12 @@ def Devition():
 
         print(show_question)
 
-        result = num1 / num2 
+        result = num1 / num2
 
-        answer = int(input("Answer: "))
+        result = str(result)
+        answer = float(input("Answer: "))
 
-        if answer == result:
+        if str(answer) == str(result[0:4]):
             correct_counter = correct_counter + 1
             print(f"\nCorrect!\n{count} of {attempt}\nCorrect Answers: {correct_counter:>3}\nWrong   Answers : {wrong_counter:>3}")
             num1 = random.randint(a, b)
@@ -239,6 +242,7 @@ def Devition():
             count = count + 1
 
     except ValueError:
+        print("\n------------------------------------------------------------------------------------\n")
         print("\n __________________________\n| To  answer, use numbers |\n‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
         print("             /\\\n"+"            /  \\\n"+"           / !? \\\n","          ‾‾‾‾‾‾")
         return Devition()
