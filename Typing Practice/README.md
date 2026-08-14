@@ -43,3 +43,29 @@ source venv/bin/activate
 python -m venv venv
 venv\Scripts\activate
 ```
+
+**Install Flet via pip:**
+```bash
+pip install flet
+```
+
+**Ensure your project files are arranged as follows:**
+typing-practice/
+│
+├── app.py              # Main application script
+├── easy.txt            # Practice sentences for Easy difficulty
+├── normal.txt          # Practice sentences for Normal difficulty
+└── hard.txt            # Practice sentences for Hard difficulty
+
+
+
+**To start the app, execute app.py:**
+```bash
+python app.py
+```
+
+##How to Play?
+1. **Select Difficulty:** Click Easy, Normal, or Hard on the start screen.
+2. **Start Typing:** Click inside the text input box and begin typing the prompt text.
+3. **Correct Errors:** If you hit a wrong key, press ```Backspace``` and fix it—the letter will change to Orange to acknowledge the correction.
+4. **Finish Sentence:** Complete the sentence to gain score points and progress to higher levels!
