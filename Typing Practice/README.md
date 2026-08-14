@@ -64,7 +64,7 @@ typing-practice/
 python app.py
 ```
 
-##How to Play?
+## How to Play?
 1. **Select Difficulty:** Click Easy, Normal, or Hard on the start screen.
 2. **Start Typing:** Click inside the text input box and begin typing the prompt text.
 3. **Correct Errors:** If you hit a wrong key, press ```Backspace``` and fix it—the letter will change to Orange to acknowledge the correction.
