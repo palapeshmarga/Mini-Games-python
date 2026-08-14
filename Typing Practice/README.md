@@ -54,7 +54,7 @@ typing-practice/\
 │\
 ├── app.py&emsp;&emsp;&emsp;&ensp;# Main application script\
 ├── easy.txt&emsp;&emsp;&emsp;# Practice sentences for Easy difficulty\
-├── normal.txt&emsp;&ensp;# Practice sentences for Normal difficulty\
+├── normal.txt&emsp;&ensp;&ensp;# Practice sentences for Normal difficulty\
 └── hard.txt&emsp;&emsp;&emsp;# Practice sentences for Hard difficulty\
 
 
