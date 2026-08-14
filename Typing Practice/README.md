@@ -51,7 +51,7 @@ pip install flet
 
 **Ensure your project files are arranged as follows:**\
 typing-practice/\
-│
+│\
 ├── app.py              # Main application script\
 ├── easy.txt            # Practice sentences for Easy difficulty\
 ├── normal.txt          # Practice sentences for Normal difficulty\
