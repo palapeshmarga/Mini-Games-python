@@ -49,13 +49,16 @@ venv\Scripts\activate
 pip install flet
 ```
 
-**Ensure your project files are arranged as follows:**\
-typing-practice/\
-│\
-├── app.py&emsp;&emsp;&emsp;&ensp;# Main application script\
-├── easy.txt&emsp;&emsp;&emsp;# Practice sentences for Easy difficulty\
-├── normal.txt&emsp;&ensp;&ensp;# Practice sentences for Normal difficulty\
-└── hard.txt&emsp;&emsp;&emsp;# Practice sentences for Hard difficulty\
+**Ensure your project files are arranged as follows:**
+
+```text
+typing-practice/
+│
+├── app.py          # Main application script
+├── easy.txt        # Practice sentences for Easy difficulty
+├── normal.txt      # Practice sentences for Normal difficulty
+└── hard.txt        # Practice sentences for Hard difficulty
+```
 
 
 
