@@ -36,3 +36,10 @@ Create and activate a virtual environment to isolate project dependencies:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+```
+
+**Windows:**
+```cmd
+python -m venv venv
+venv\Scripts\activate
+```
