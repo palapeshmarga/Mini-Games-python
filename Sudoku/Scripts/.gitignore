@@ -1,0 +1,4 @@
+venv/
+BG_Remover/venv/
+__pycache__/
+*.so
