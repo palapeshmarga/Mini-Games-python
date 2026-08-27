@@ -30,21 +30,28 @@ def fill_board(board):
                 return False
     return True
 
-def generate_nums():
-    """Generates a playable board and returns a flat 81-element list."""
+def generate_nums(difficulty="Normal"):
+    """Generates a playable board based on selected difficulty."""
     board = [[0] * 9 for _ in range(9)]
     fill_board(board)
     
-    # Remove numbers to create the puzzle (increase for higher difficulty)
-    cells_to_remove = 45 
+    if difficulty == "Easy":
+        cells_to_remove = 30
+    elif difficulty == "Hard":
+        cells_to_remove = 54
+    else:  # Normal
+        cells_to_remove = 42
+
+    puzzle_board = [row[:] for row in board]
     while cells_to_remove > 0:
         r, c = random.randint(0, 8), random.randint(0, 8)
-        if board[r][c] != 0:
-            board[r][c] = 0
+        if puzzle_board[r][c] != 0:
+            puzzle_board[r][c] = 0
             cells_to_remove -= 1
             
     nums = []
-    for row in board:
+    for row in puzzle_board:
         for val in row:
             nums.append("" if val == 0 else str(val))
+            
     return nums
