@@ -62,11 +62,12 @@ python main.py
 
 ## 📁 Project Structure
 
-Plaintext
-
+```python
+src
 ├── main.py          # Flet GUI application, layout components, and game loop  
-└── Tests.py         # Sudoku puzzle generation, backtracking solver, and difficulty logic
-
+└── Tests.py         # Sudoku puzzle generation, backtracking solver
+                     # and difficulty logic
+```
 
 ## 🎮 How to Play
 
